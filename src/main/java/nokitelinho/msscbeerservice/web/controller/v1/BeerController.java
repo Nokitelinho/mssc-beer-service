@@ -13,23 +13,17 @@ import java.util.UUID;
 @RestController
 @RequestMapping("/api/v1/beer")
 public class BeerController {
-    private final BeerService beerService;
-
-    @Autowired
-    public BeerController(BeerService beerService) {
-        this.beerService = beerService;
-    }
 
     @GetMapping("/{beerId}")
-    public ResponseEntity<BeerDto> getBeerById(@PathVariable("beerId") UUID beerId) {
-        BeerDto beerDto = beerService.getBeerById(beerId);
-        return new ResponseEntity<>(beerDto, HttpStatus.OK);
+    public ResponseEntity getBeerById(@PathVariable("beerId") UUID beerId) {
+        //TODO
+        return new ResponseEntity(HttpStatus.OK);
     }
 
     @PostMapping
     public ResponseEntity saveNewBeer(@RequestBody BeerDto beerDto) {
         //TODO saveBeer impl
-        return new ResponseEntity(HttpStatus.OK);
+        return new ResponseEntity(HttpStatus.CREATED);
     }
 
     @PutMapping("/{beerId}")
