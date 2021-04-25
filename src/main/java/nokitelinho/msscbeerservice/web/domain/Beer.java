@@ -38,8 +38,8 @@ public class Beer {
     @Column(name = "beer_style")
     private String beerStyle;
     @Column(name = "upc")
-    private Long upc;
-    @Column(name = "price", unique = true)
+    private String upc;
+    @Column(name = "price")
     private BigDecimal price;
 
     @Column(name = "min_on_hand")

@@ -2,7 +2,6 @@ package nokitelinho.msscbeerservice.web.mappers;
 
 import javax.annotation.processing.Generated;
 import nokitelinho.msscbeerservice.web.domain.Beer;
-import nokitelinho.msscbeerservice.web.domain.Beer.BeerBuilder;
 import nokitelinho.msscbeerservice.web.model.BeerDto;
 import org.springframework.stereotype.Component;
 
@@ -30,8 +29,8 @@ public class BeerMapperImpl implements BeerMapper {
             return null;
         }
 
-        BeerBuilder beer = Beer.builder();
+        Beer beer = new Beer();
 
-        return beer.build();
+        return beer;
     }
 }
