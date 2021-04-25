@@ -1,4 +1,4 @@
-package nokitelinho.msscbeerservice.web.repository;
+package nokitelinho.msscbeerservice.repository;
 
 import nokitelinho.msscbeerservice.web.domain.Beer;
 import org.springframework.data.repository.PagingAndSortingRepository;

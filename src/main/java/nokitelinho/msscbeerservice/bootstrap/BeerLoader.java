@@ -1,7 +1,7 @@
 package nokitelinho.msscbeerservice.bootstrap;
 
 import nokitelinho.msscbeerservice.web.domain.Beer;
-import nokitelinho.msscbeerservice.web.repository.BeerRepository;
+import nokitelinho.msscbeerservice.repository.BeerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
